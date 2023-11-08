@@ -50,7 +50,7 @@ func hand_init(_hand){ #Initialize hand.
 }
 
 func hand_print(_hand,        i){ #Print hand contents.
-	for(i = 0; i < _hand["top"]; i++) { printf("%s ", card_icon(hand[i])) }
+	for(i = 0; i < _hand["top"]; i++) { printf("%s ", card_icon(_hand[i])) }
 }
 
 func hand_print_detail(_hand,        i){ #Print hand contents verbosely.
